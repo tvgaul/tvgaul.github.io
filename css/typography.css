@@ -34,11 +34,27 @@ body {
   font-weight: 500;
 }
 
+.wrapping-text{
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .project-card-text {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+
+
+.project-card-text-nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 200;
   -webkit-box-orient: vertical;
 }
 

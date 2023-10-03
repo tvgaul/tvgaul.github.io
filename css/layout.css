@@ -21,7 +21,7 @@ body {
 /* Main Page Layout */
 
 #main-content {
-  margin: 100px 425px;
+  margin: 50px 425px;
   display: flex;
   flex-direction: column;
   gap: 96px;
@@ -49,6 +49,8 @@ body {
   width: 100%;
   height: auto;
 }
+
+
 
 #portfolio-header-text-container {
   display: flex;
@@ -123,6 +125,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.project-image-wrap{
+  float: left;
+  margin: 5px;
 }
 
 .project-header-image {
