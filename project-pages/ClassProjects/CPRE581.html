@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../../assets/images/Chicken.png" />
+     <title>Thomas Gaul's Portfolio</title>
+    <meta name="description" content="Portfolio of Thomas Gaul's projects and activities">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/typography.css">
+    <link rel="stylesheet" href="../../css/utilities.css">
+
+		<script defer src="../../js/script.js"></script>
+
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Portfolio Home</span>
+        <a class="nav-title-link" href="../../project-pages/SolarCar.html">
+          <span class="nav-title">Solar Car</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/SeniorDesign.html">
+          <span class="nav-title">Senior Design</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/OtherProjects/Other Projects.html">
+          <span class="nav-title">Other Projects</span>
+        </a>
+        <a class="active" href="../../project-pages/ClassProjects/ClassProjects.html">
+          <span class="nav-title">Class Projects</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/Woodworking/Woodworking.html">
+          <span class="nav-title">Woodworking</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/Resume.html">
+          <span class="nav-title">Resume</span>
+        </a>
+        <a style="float:right"  class="buttonEmail" href="mailto:tvgaul@iastate.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+        
+      </a>
+    </div>
+
+
+
+    
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+
+        <div class="main-title">CPRE 381 Processor Design
+        <a style="float:right" class="button" href="../../project-pages/ClassProjects/ClassProjects.html">
+              <span class="button-text">Back</span>
+              <image src="../../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+        <div class="wraping-text">My favorite class project I have done was Spring 2023 in CPRE 381
+          (Computer Architecture). Throughout the class we implement three different basic MIPS processors
+          implementing many of the basic instructions such as: add, addi, sub, subi, beq, bne, j, jal, jr, and, or, xor,
+          andi, ori, xori, etc. This project was very challenging but taught me how to use VHDL and gave me a very
+          strong core understanding of how a processor works. Additionally, I got to experience with QuestaSim and 
+          learned how to use some of the powerful features of it. 
+        </div>
+        <div class="wraping-text">The first processor my partner and I implemented was a single stage processor. We split the work 
+          so each module I made he tested and vice versa. We both made some of the components in some previous labs like the register file. 
+          Once each of us made our half and tested the other half we met up one night to put together the top level design. We stayed up late
+          that night getting all test programs to work. I really enjoyed working on this project and it was so satifing to get the test program with
+          recursion to work and the "Grendel" program that run over 2000 dynamic instructions to work properly.
+        </div>
+        <div class="wraping-text">The next processor we implement was a software scheduled 5 stage pipeline. Implementing 
+          it was relatively simple. My partner inserted the pipeline register in between each file while I rewrote all of our
+          test code to be software scheduled. 
+        </div>
+        <div class="wraping-text">The final processor we made was a hardware scheduled pipeline with forwarding. 
+          On this processor we had to handle stalling a flushing required by it. It ran all the same programs that
+          the single stage ran but at a significantly higher frequency allowing for higher performance. Additionally,
+          we added a predict branch taken predictor it. Once we complete all the portions of this processor we decided 
+          to load it onto an FPGA for extra credit. This experience built onto my previous experience in CPRE 281 with FPGAs
+          and was very fun to see our semester of work run on hardware. 
+        </div>
+      
+      <div id="project-gallery">
+        
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            
+            <div class="gallery-image-container half-width">
+              <img src="../../assets/images/Projects/CPRE381SingleStage.png" class="gallery-image">
+              <span class="image-caption">Single stage MIPS processor high level design</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../../assets/images/Projects/CPRE3815Stage.png" class="gallery-image">
+              <span class="image-caption">Five stage pipeline MIPS processor high level design</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/thomas-gaul-a87b25208/details/experience/">
+        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:tvgaul@iastate.edu">
+        <image src="../../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
