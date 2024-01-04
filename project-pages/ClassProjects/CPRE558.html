@@ -54,52 +54,33 @@
       <!-- PROJECT HEADER -->
       <div id="project-header">
 
-        <div class="main-title">CPRE 381 Processor Design
+        <div class="main-title">CPRE 558 Hardware Based RMS Task Scheduling
         <a style="float:right" class="button" href="../../project-pages/ClassProjects/ClassProjects.html">
               <span class="button-text">Back</span>
               <image src="../../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
         </div>
-        <div class="wraping-text">My favorite class project I have done was Spring 2023 in CPRE 381
-          (Computer Architecture). Throughout the class we implement three different basic MIPS processors
-          implementing many of the basic instructions such as: add, addi, sub, subi, beq, bne, j, jal, jr, and, or, xor,
-          andi, ori, xori, etc. This project was very challenging but taught me how to use VHDL and gave me a very
-          strong core understanding of how a processor works. Additionally, I got to experience with QuestaSim and 
-          learned how to use some of the powerful features of it. 
+        <div class="wraping-text">In CPRE 558 I learned a lot about real time systems. We covered many scheduling algorithms
+          One thing we did not explore extensively but I considered a lot was the high costs of scheduling algorithms. Specifically the 
+          cost of context switching for a task to preempt and having a OS to calculated what tasks go when. 
         </div>
-        <div class="wraping-text">The first processor my partner and I implemented was a single stage processor. We split the work 
-          so each module I made he tested and vice versa. We both made some of the components in some previous labs like the register file. 
-          Once each of us made our half and tested the other half we met up one night to put together the top level design. We stayed up late
-          that night getting all test programs to work. I really enjoyed working on this project and it was so satifing to get the test program with
-          recursion to work and the "Grendel" program that run over 2000 dynamic instructions to work properly.
-        </div>
-        <div class="wraping-text">The next processor we implement was a software scheduled 5 stage pipeline. Implementing 
-          it was relatively simple. My partner inserted the pipeline register in between each file while I rewrote all of our
-          test code to be software scheduled. 
-        </div>
-        <div class="wraping-text">The final processor we made was a hardware scheduled pipeline with forwarding. 
-          On this processor we had to handle stalling a flushing required by it. It ran all the same programs that
-          the single stage ran but at a significantly higher frequency allowing for higher performance. Additionally,
-          we added a predict branch taken predictor it. Once we complete all the portions of this processor we decided 
-          to load it onto an FPGA for extra credit. This experience built onto my previous experience in CPRE 281 with FPGAs
-          and was very fun to see our semester of work run on hardware. 
+        <div class="wraping-text">To explore an option to mitigate the context and scheduler overhead my project partner  
+          and I decided to try to implement RMS scheduling on an FPGA. We were able to successfully implement it. In the future I would 
+          like to explore putting it with a processor and be able to better compare the implementation costs and performance. 
         </div>
       
-      <div id="project-gallery">
-        
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            
-            <div class="gallery-image-container half-width">
-              <img src="../../assets/images/Projects/CPRE381SingleStage.png" class="gallery-image">
-              <span class="image-caption">Single stage MIPS processor high level design</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../../assets/images/Projects/CPRE3815Stage.png" class="gallery-image">
-              <span class="image-caption">Five stage pipeline MIPS processor high level design</span>
-            </div>
+        <div id="project-gallery">
+          <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+          <div class="subheader-text">Project Report</div>
+          <div class="project-gallery-content">
+            <p><a href="..\..\assets\pdfs\CPR_E_558_Project_Pres.pdf">Project Presentation</a></p>
+            <embed src= "..\..\assets\pdfs\CPR_E_558_Project.pdf" 
+            width="1000"
+            height="800"> 
+          </div>
         </div>
       </div>
+      
     </div>
 
     <!-- FOOTER -->
