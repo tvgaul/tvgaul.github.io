@@ -15,7 +15,7 @@ body {
 }
 
 .image-caption {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -30,13 +30,13 @@ body {
 }
 
 .body-text {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 
 .wrapping-text{
   text-align: justify;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
 }
 
