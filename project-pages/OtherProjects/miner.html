@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+     <link rel="icon" href="../../assets/images/Chicken.png" />
+     <title>Thomas Gaul's Portfolio</title>
+    <meta name="description" content="Portfolio of Thomas Gaul's projects and activities">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/typography.css">
+    <link rel="stylesheet" href="../../css/utilities.css">
+
+		<script defer src="../../js/script.js"></script>
+
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Portfolio Home</span>
+        <a class="nav-title-link" href="../../project-pages/SolarCar.html">
+          <span class="nav-title">Solar Car</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/SeniorDesign.html">
+          <span class="nav-title">Senior Design</span>
+        </a>
+        <a class="active" href="../../project-pages/OtherProjects/Other Projects.html">
+          <span class="nav-title">Maker Projects</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/ClassProjects/ClassProjects.html">
+          <span class="nav-title">Class Projects</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/Woodworking/Woodworking.html">
+          <span class="nav-title">Woodworking</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/Resume.html">
+          <span class="nav-title">Resume</span>
+        </a>
+        <a style="float:right"  class="buttonEmail" href="mailto:tvgaul@iastate.edu">
+          <span class="button-text">Contact Me</span>
+        </a>
+        
+      </a>
+    </div>
+
+
+
+    
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">HO Scale Ghost Miner
+        <a style="float:right" class="button" href="https://github.com/tvgaul/TrainTableCode">
+              <span class="button-text">Code</span>
+              <image src="../../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+        <div class="wraping-text">I have worked on a small HO scale train table with my older brother a bunch over the years. We 
+          have added a number of features such as a green LED flashing in a cabin in a woods to have a witches hut with spells being cast.
+          I decided to add a microcrontroller to handle all the LED flashing. The features it controls are: blinking water tower light, 
+          flashing witches spell hut, burning building, and ghost signalman. All aspect occur randomly. Finally I added a small .96 in 
+          LCD display that project images of ghosts onto a peice of plexiglass at an angle making a ghost like appearance at the end of 
+          a mine shaft. When growing up my siblings and I watched a lot of Scooby Doo so I set it to display different ghosts from Scooby Doo.
+          The images are selected at random from an sd card. To handle all the connections I designed a custom PCB on KiCAD to handle all the wire 
+          connections. Additionally, this PCB handle power regulation. The power supply on the train tables says it outputs 12V DV which
+          is a input option on an Arduino. Unfortuately, it was actually putting out 18 volts which we found out by frying an Arduino Nano. 
+          Thus I put a linear reguatlor to handle the power regulation.
+        </div>
+       
+      <div id="project-gallery">
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            
+            <div class="gallery-image-container">
+              <img src="../../assets/images/Projects/MinerPCB.jpg" class="gallery-image">
+              <span class="image-caption">PCB with microcrontroller for table control</span>
+            </div>
+            <!-- <div class="gallery-image-container half-width">
+              <img src="../../assets/images/Projects/HawkeyeSpeakerDark.jpg" class="gallery-image">
+              <span class="image-caption">Speaker lit up in the dark</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../../assets/images/Projects/SpeakerDesign.png" class="gallery-image">
+              <span class="image-caption">Model of the speaker case in Autodesk Inventor</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../../assets/images/Projects/HawkeyeSpeakerBoard.jpg" class="gallery-image">
+              <span class="image-caption">PCB embedded within the speaker</span>
+            </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/thomas-gaul-a87b25208/details/experience/">
+        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:tvgaul@iastate.edu">
+        <image src="../../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
