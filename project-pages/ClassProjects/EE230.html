@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-     <link rel="icon" href="../../assets/images/Chicken.png" />
-     <title>Thomas Gaul's Portfolio</title>
-    <meta name="description" content="Portfolio of Thomas Gaul's projects and activities">
+    <link rel="icon" href="../../assets/images/Chicken.png" />
+    <title>Thomas Gaul's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Thomas Gaul's projects and activities"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/typography.css">
-    <link rel="stylesheet" href="../../css/utilities.css">
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/typography.css" />
+    <link rel="stylesheet" href="../../css/utilities.css" />
 
-		<script defer src="../../js/script.js"></script>
-
-	</head>
-	<body>
+    <script defer src="../../js/script.js"></script>
+  </head>
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="../../index.html">
@@ -26,91 +28,131 @@
         <a class="nav-title-link" href="../../project-pages/SeniorDesign.html">
           <span class="nav-title">Senior Design</span>
         </a>
-        <a class="nav-title-link" href="../../project-pages/OtherProjects/Other Projects.html">
+        <a
+          class="nav-title-link"
+          href="../../project-pages/OtherProjects/Other Projects.html"
+        >
           <span class="nav-title">Maker Projects</span>
         </a>
-        <a class="active" href="../../project-pages/ClassProjects/ClassProjects.html">
+        <a
+          class="active"
+          href="../../project-pages/ClassProjects/ClassProjects.html"
+        >
           <span class="nav-title">Class Projects</span>
         </a>
-        <a class="nav-title-link" href="../../project-pages/Woodworking/Woodworking.html">
+        <a
+          class="nav-title-link"
+          href="../../project-pages/Woodworking/Woodworking.html"
+        >
           <span class="nav-title">Woodworking</span>
         </a>
         <a class="nav-title-link" href="../../project-pages/Resume.html">
           <span class="nav-title">Resume</span>
         </a>
-        <a style="float:right"  class="buttonEmail" href="mailto:thomasvgaul@gmail.com">
+        <a
+          style="float: right"
+          class="buttonEmail"
+          href="mailto:thomasvgaul@gmail.com"
+        >
           <span class="button-text">Contact Me</span>
         </a>
-        
       </a>
     </div>
 
-
-
-    
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PROJECT HEADER -->
       <div id="project-header">
-          <!-- 
+        <!-- 
             TODO
 
             - Change the 'main-title' text to the name of your project
             - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
-        <div class="main-title">EE 230 Analog Temperature Indicator
-        <a style="float:right" class="button" href="../../project-pages/ClassProjects/ClassProjects.html">
-              <span class="button-text">Back</span>
-              <image src="../../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
+        <div class="main-title">
+          EE 230 Analog Temperature Indicator
+          <a
+            style="float: right"
+            class="button"
+            href="../../project-pages/ClassProjects/ClassProjects.html"
+          >
+            <span class="button-text">Back</span>
+            <image
+              src="../../assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+            />
+          </a>
         </div>
-        <div class="wraping-text">In EE 230 (Electronics and Systems) Fall 2022, we had a small project over a couple of weeks
-          to design a circuit that would change what LED was turned on based on what temperature a sensor was reading.
-          The challenge was that the sensor needed to turn on lights at one temperature and turn it off again at another. The 
-          temperature sensor output had different voltage depending on the temperature that it was sensing.
-          Fortunately, a year prior I had heard an upperclassmen mention a hysteresis circuit to implement just such a function. With a bit 
-          of research, I found a nice document describing the math and the circuit which my lab partner and I implemented. We 
-          started our implementation by doing the math described in the document for each of the LEDs for their on and off conditions.
-          Then we simulated it on an simulator called Falstad to ensure our math was correct. Once everything was working properly, 
-          we made the circuit on a bread board and verified it worked as intended. We ended up struggling to get it to work 
-          on hardware initially and solved our problems by using a better op amp. This taught me the importance of knowing that 
-          Op-Amps do not function as perfectly as the ideal op-amp. I really enjoyed this project because I could use information
-          I learned in Solar Car and it was really cool to see it functioning properly. I also implemented the circuit with a microcontroller 
-          as a joke because the project description never said we explicitly had to do it analogly and could not do it digitally, although
-          the lab TAs shot down that plan. 
+        <div class="wraping-text">
+          In EE 230 (Electronics and Systems) Fall 2022, we had a small project
+          over a couple of weeks to design a circuit that would change what LED
+          was turned on based on what temperature a sensor was reading. The
+          challenge was that the sensor needed to turn on lights at one
+          temperature and turn it off again at another. The temperature sensor
+          output had different voltage depending on the temperature that it was
+          sensing. Fortunately, a year prior I had heard an upperclassmen
+          mention a hysteresis circuit to implement just such a function. With a
+          bit of research, I found a nice document describing the math and the
+          circuit which my lab partner and I implemented. We started our
+          implementation by doing the math described in the document for each of
+          the LEDs for their on and off conditions. Then we simulated it on an
+          simulator called Falstad to ensure our math was correct. Once
+          everything was working properly, we made the circuit on a bread board
+          and verified it worked as intended. We ended up struggling to get it
+          to work on hardware initially and solved our problems by using a
+          better op amp. This taught me the importance of knowing that Op-Amps
+          do not function as perfectly as the ideal op-amp. I really enjoyed
+          this project because I could use information I learned in Solar Car
+          and it was really cool to see it functioning properly. I also
+          implemented the circuit with a microcontroller as a joke because the
+          project description never said we explicitly had to do it analogly and
+          could not do it digitally, although the lab TAs shot down that plan.
         </div>
 
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-
+        <div id="project-gallery">
+          <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+          <div class="subheader-text">Image Gallery</div>
+          <div class="project-gallery-content">
             <div class="gallery-image-container half-width">
-              <img src="../../assets/images/Projects/3LEDTempSense.jpg" class="gallery-image">
-              <span class="image-caption">Breadboard implementation of our circuit</span>
+              <img
+                src="../../assets/images/Projects/3LEDTempSense.jpg"
+                class="gallery-image"
+              />
+              <span class="image-caption"
+                >Breadboard implementation of our circuit</span
+              >
             </div>
             <div class="gallery-image-container half-width">
-              <img src="../../assets/images/Projects/Simulation.PNG" class="gallery-image">
-              <span class="image-caption">Falstad simulation of our circuit design</span>
+              <img
+                src="../../assets/images/Projects/Simulation.PNG"
+                class="gallery-image"
+              />
+              <span class="image-caption"
+                >Falstad simulation of our circuit design</span
+              >
             </div>
+          </div>
+          <div class="subheader-text">Project Report</div>
+          <div class="project-gallery-content">
+            <embed
+              src="..\..\assets\pdfs\Lab_4_Report.pdf"
+              width="1000"
+              height="800"
+            />
+          </div>
         </div>
-        <div class="subheader-text">Project Report</div>
-        <div class="project-gallery-content">
-          <embed src= "..\..\assets\pdfs\Lab_4_Report.pdf" 
-          width="1000"
-          height="800"> 
-        </div>
-      </div>
       </div>
     </div>
 
     <!-- FOOTER -->
     <div id="footer">
-
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/thomas-gaul-a87b25208/details/experience/">
-        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon"/>
+      <a
+        class="icon-link"
+        target="_blank"
+        href="www.linkedin.com/in/thomas-gaul-a87b25208"
+      >
+        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
@@ -118,9 +160,8 @@
         This should be the same across all pages.
       -->
       <a class="icon-link" href="mailto:thomasvgaul@gmail.com">
-        <image src="../../assets/icons/mail.svg" class="footer-icon"/>
+        <image src="../../assets/icons/mail.svg" class="footer-icon" />
       </a>
     </div>
-
-	</body>
+  </body>
 </html>

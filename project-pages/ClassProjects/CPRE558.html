@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-     <link rel="icon" href="../../assets/images/Chicken.png" />
-     <title>Thomas Gaul's Portfolio</title>
-    <meta name="description" content="Portfolio of Thomas Gaul's projects and activities">
+    <link rel="icon" href="../../assets/images/Chicken.png" />
+    <title>Thomas Gaul's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Thomas Gaul's projects and activities"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="../../css/layout.css">
-    <link rel="stylesheet" href="../../css/typography.css">
-    <link rel="stylesheet" href="../../css/utilities.css">
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/typography.css" />
+    <link rel="stylesheet" href="../../css/utilities.css" />
 
-		<script defer src="../../js/script.js"></script>
-
-	</head>
-	<body>
+    <script defer src="../../js/script.js"></script>
+  </head>
+  <body>
     <!-- NAVBAR -->
     <div class="navbar">
       <a class="nav-title-link" href="../../index.html">
@@ -26,67 +28,96 @@
         <a class="nav-title-link" href="../../project-pages/SeniorDesign.html">
           <span class="nav-title">Senior Design</span>
         </a>
-        <a class="nav-title-link" href="../../project-pages/OtherProjects/Other Projects.html">
+        <a
+          class="nav-title-link"
+          href="../../project-pages/OtherProjects/Other Projects.html"
+        >
           <span class="nav-title">Maker Projects</span>
         </a>
-        <a class="active" href="../../project-pages/ClassProjects/ClassProjects.html">
+        <a
+          class="active"
+          href="../../project-pages/ClassProjects/ClassProjects.html"
+        >
           <span class="nav-title">Class Projects</span>
         </a>
-        <a class="nav-title-link" href="../../project-pages/Woodworking/Woodworking.html">
+        <a
+          class="nav-title-link"
+          href="../../project-pages/Woodworking/Woodworking.html"
+        >
           <span class="nav-title">Woodworking</span>
         </a>
         <a class="nav-title-link" href="../../project-pages/Resume.html">
           <span class="nav-title">Resume</span>
         </a>
-        <a style="float:right"  class="buttonEmail" href="mailto:thomasvgaul@gmail.com">
+        <a
+          style="float: right"
+          class="buttonEmail"
+          href="mailto:thomasvgaul@gmail.com"
+        >
           <span class="button-text">Contact Me</span>
         </a>
-        
       </a>
     </div>
 
-
-
-    
     <!-- MAIN PAGE CONTENT -->
     <div id="main-content">
-
       <!-- PROJECT HEADER -->
       <div id="project-header">
+        <div class="main-title">
+          CPRE 558 Hardware Based RMS Task Scheduling
+          <a
+            style="float: right"
+            class="button"
+            href="../../project-pages/ClassProjects/ClassProjects.html"
+          >
+            <span class="button-text">Back</span>
+            <image
+              src="../../assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+            />
+          </a>
+        </div>
+        <div class="wraping-text">
+          In CPRE 558 I learned a lot about real time systems. We covered many
+          scheduling algorithms. One thing we did not explore extensively but I
+          considered a lot was the high costs of scheduling algorithms.
+          Specifically the cost of context switching for a task to preempt and
+          having an OS to calculate what tasks to go when.
+        </div>
+        <div class="wraping-text">
+          To explore an option to mitigate the context and scheduler overhead my
+          project partner and I decided to try to implement RMS scheduling in
+          hardware on an FPGA. We were able to successfully implement it. In the
+          future I would like to explore putting it with a processor and be able
+          to better compare the implementation costs and performance.
+        </div>
 
-        <div class="main-title">CPRE 558 Hardware Based RMS Task Scheduling
-        <a style="float:right" class="button" href="../../project-pages/ClassProjects/ClassProjects.html">
-              <span class="button-text">Back</span>
-              <image src="../../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-        </div>
-        <div class="wraping-text">In CPRE 558 I learned a lot about real time systems. We covered many scheduling algorithms.
-          One thing we did not explore extensively but I considered a lot was the high costs of scheduling algorithms. Specifically the 
-          cost of context switching for a task to preempt and having an OS to calculate what tasks to go when. 
-        </div>
-        <div class="wraping-text">To explore an option to mitigate the context and scheduler overhead my project partner  
-          and I decided to try to implement RMS scheduling in hardware on an FPGA. We were able to successfully implement it. In the future I would 
-          like to explore putting it with a processor and be able to better compare the implementation costs and performance. 
-        </div>
-      
         <div id="project-gallery">
           <div class="subheader-text">Project Report</div>
           <div class="project-gallery-content">
-            <p><a href="..\..\assets\pdfs\CPR_E_558_Project_Pres.pdf">Project Presentation</a></p>
-            <embed src= "..\..\assets\pdfs\CPR_E_558_Project.pdf" 
-            width="1000"
-            height="800"> 
+            <p>
+              <a href="..\..\assets\pdfs\CPR_E_558_Project_Pres.pdf"
+                >Project Presentation</a
+              >
+            </p>
+            <embed
+              src="..\..\assets\pdfs\CPR_E_558_Project.pdf"
+              width="1000"
+              height="800"
+            />
           </div>
         </div>
       </div>
-      
     </div>
 
     <!-- FOOTER -->
     <div id="footer">
-
-      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/thomas-gaul-a87b25208/details/experience/">
-        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon"/>
+      <a
+        class="icon-link"
+        target="_blank"
+        href="www.linkedin.com/in/thomas-gaul-a87b25208"
+      >
+        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon" />
       </a>
       <!-- 
         TODO - Change the email after "mailto" to your contact email 
@@ -94,9 +125,8 @@
         This should be the same across all pages.
       -->
       <a class="icon-link" href="mailto:thomasvgaul@gmail.com">
-        <image src="../../assets/icons/mail.svg" class="footer-icon"/>
+        <image src="../../assets/icons/mail.svg" class="footer-icon" />
       </a>
     </div>
-
-	</body>
+  </body>
 </html>
