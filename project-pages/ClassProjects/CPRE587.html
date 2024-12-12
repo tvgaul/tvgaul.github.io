@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link rel="icon" href="../../assets/images/Chicken.png" />
+    <title>Thomas Gaul's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Thomas Gaul's projects and activities"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="../../css/layout.css" />
+    <link rel="stylesheet" href="../../css/typography.css" />
+    <link rel="stylesheet" href="../../css/utilities.css" />
+
+    <script defer src="../../js/script.js"></script>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../../index.html">
+        <span class="nav-title">Portfolio Home</span>
+        <a class="nav-title-link" href="../../project-pages/SolarCar.html">
+          <span class="nav-title">Solar Car</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/SeniorDesign.html">
+          <span class="nav-title">Senior Design</span>
+        </a>
+        <a
+          class="nav-title-link"
+          href="../../project-pages/OtherProjects/Other Projects.html"
+        >
+          <span class="nav-title">Maker Projects</span>
+        </a>
+        <a
+          class="active"
+          href="../../project-pages/ClassProjects/ClassProjects.html"
+        >
+          <span class="nav-title">Class Projects</span>
+        </a>
+        <a
+          class="nav-title-link"
+          href="../../project-pages/Woodworking/Woodworking.html"
+        >
+          <span class="nav-title">Woodworking</span>
+        </a>
+        <a class="nav-title-link" href="../../project-pages/Resume.html">
+          <span class="nav-title">Resume</span>
+        </a>
+        <a
+          style="float: right"
+          class="buttonEmail"
+          href="mailto:thomasvgaul@gmail.com"
+        >
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+        <div class="main-title">
+          CPRE 587 Machine Learning MAC Accelerator
+          <a
+            style="float: right"
+            class="button"
+            href="../../project-pages/ClassProjects/ClassProjects.html"
+          >
+            <span class="button-text">Back</span>
+            <image
+              src="../../assets/icons/arrow-right.svg"
+              class="right-arrow-icon"
+            />
+          </a>
+        </div>
+        <div class="wraping-text">
+          CPRE 587 is Hardware Design for Machine learning at Iowa State. It gives a background
+          on machine learning and explores various ways to Accelerate it with hardware designs. I 
+          choose to take it Fall 2024 to grow in my understanding of machine learning and to improve 
+          my digital design capabilities.
+        </div>
+        <div class="wraping-text">
+          My lab partner and I came up with the final project of designing a MAC accelerator for 
+          fabrication with the new club of Chip forge at Iowa State. The club does ASIC design and 
+          orders a chip for fabrication each semester. We build a MAC unit that could do 32-bit, 2 16-bit, 
+          4 8-bit, 8 4-bit, or 16 2-bit MACs. This MAC unit is coupled with a very minimalist RISC-V 
+          processor which the Chipforge club builds around due to using the eFabless tool set. We saw
+          significant speed up with our design as it did not increase critical path but did give multiplication 
+          capabilities which otherwise had to be handled in software. The chip is set to come back Spring 2025.
+          After we designed it and verified it in simulation we put the design on the FPGA for further testing 
+          and profiling speedup. More details are in our report below. 
+        </div>
+        <div class="wraping-text">
+          With extra time at the end of the semester to give our accelerator a meaningful workload. I trained 
+          a deep neural network for Iris identification from the Iris dataset achieving a 96% accuracy.  The 
+          main challenge on this was getting it to fit on the tiny memory that the processor has. 
+          Additionally it built up my experience with fixed point math as I worked to get it to run on our design 
+          flashed on a FPGA. More details are in the design document. 
+        </div>
+
+        <div id="project-gallery">
+          <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+          <div class="subheader-text">Project Report</div>
+          <div class="project-gallery-content">
+            <embed
+              src="..\..\assets\pdfs\CPR_E_587_Report.pdf"
+              width="1000"
+              height="800"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <a
+        class="icon-link"
+        target="_blank"
+        href="https://www.linkedin.com/in/thomas-gaul-a87b25208"
+      >
+        <image src="../../assets/icons/LinkedIn_icon.svg" class="footer-icon" />
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:thomasvgaul@gmail.com">
+        <image src="../../assets/icons/mail.svg" class="footer-icon" />
+      </a>
+    </div>
+  </body>
+</html>
